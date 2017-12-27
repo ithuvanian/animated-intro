@@ -10,6 +10,7 @@ body {
   font-family: 'Titillium Web';
 }
 
+/*blank screen on loading*/
 .overlay {
   background: #111;
   position: fixed;
@@ -32,8 +33,9 @@ body {
   justify-content: center;
 }
 
+/*first frame*/
 .frame1 {
-  background: #466996;
+  background: #373866;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -48,7 +50,7 @@ body {
 }
 .dots div {
   opacity: 0;
-  background: #3E5D85;
+  background: #303159;
   width: 7vw;
   height: 7vw;
   margin: 2vw;
@@ -87,8 +89,6 @@ body {
   opacity: .8;
   font-size: 2em;
   text-shadow: 0 0 1vw #000;
-  /*-webkit-transition: opacity .3s;
-  transition: opacity .3s;*/
 }
 .frame1 p:hover {
   cursor: pointer;
@@ -96,8 +96,10 @@ body {
   text-shadow: 0 0 1vw #000;
 }
 
+/*second frame*/
 .frame2 {
-  background: #d7764c;
+  /*frame2light*/
+  background: #4297bc;
   -webkit-transition: background-color .7s;
   transition: background-color .7s;
 }
@@ -114,8 +116,9 @@ body {
 .block {
   width: 7vw;
   height: 7vw;
-  margin: .5vw;
-  background: #af6140;
+  margin: 1vw;
+  /*frame2dark*/
+  background: #306e89;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,16 +135,16 @@ body {
 }
 .block img {
   max-width: 7vw;
-  height: auto;
+  /*height: auto;*/
 }
 .block:hover {
   cursor: pointer;
-  background: #7e462e;
+  /*frame2med*/
+  background: #3983a3;
   width: 8vw;
   height: 8vw;
-  margin: 0;
+  margin: .5vw;
 }
-
 .block1 {
   top: 55%;
   left: 46.5%;
@@ -163,8 +166,9 @@ body {
   left: 75%;
 }
 
+/*third frame*/
 .frame3 {
-  background: #cf921c;
+  background: #c88021;
 }
 .frame3 a {
   color: #fff;
@@ -203,7 +207,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   border-radius: 50%;
-  background: #af7b18;
+  background: #ad6f1c;
   font-size: 1.5em;
   -webkit-transition: background-color .5s;
   transition: background-color .5s;
@@ -211,7 +215,6 @@ body {
 .circle:hover {
   cursor: pointer;
 }
-
 .more {
   left: 25vw;
 }
@@ -222,6 +225,7 @@ body {
   left: 75vw;
 }
 
+/*screen size adjustments*/
 @media screen and (max-width: 750px) {
   .frame2>p {
     font-size: 1.5em;
@@ -276,6 +280,7 @@ body {
   }
 }
 
+/*animations*/
 @-webkit-keyframes flash {
   0% {
     opacity: 0;

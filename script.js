@@ -1,3 +1,5 @@
+var frame2light = '#4297bc', frame2med = '#3983a3', frame2dark = '#306e89';
+
 var para0 = 'Placing assured be if removed it besides on. Far shed each high read are men over day. Afraid we praise lively he suffer family estate is. Ample order up in of in ready. Timed blind had now those ought set often which. Or snug dull he show more true wish. No at many deny away miss avail. On in so indeed spirit an mother. Amounted old strictly but marianne admitted. People former is remove remain as.';
 var para1 = 'He as compliment unreserved projecting. Between had observe pretend delight for believe. Do newspaper questions consulted sweetness do. Our sportsman his unwilling fulfilled departure law. Now world own total saved above her cause table. Wicket myself her square remark the should far secure six. Smiling cousins warrant law explain for whether.';
 var para2 = 'Carried nothing on am warrant towards. Polite in of in oh needed itself silent course. Assistance travelling so especially do prosperous appearance mr no celebrated. Wanted easily in my called formed suffer. Songs hoped sense as taken ye mirth at. Believe fat how six drawing pursuit minutes far. Same do seen head am part it dear open to. Whatever may scarcely judgment had.';
@@ -28,17 +30,17 @@ assignImage( $('.block4'), 'img/paperairplane.png', para4 );
 assignImage( $('.block5'), 'img/storm.png', para5 );
 
 $(window).load(function() {
-  $('.overlay').fadeOut();
 }); //end load
 
 $(document).ready(function() {
   $('.frame, .frame1 > p, .dots').hide();
   $('.frame1').show();
+  $('.overlay').fadeOut();
   $('.frame1 > p, .dots').delay(300).fadeIn(500);
 
-  $('.frame1 > p').on('click', function() {
+  $('.frame1').on('click', function() {
     $(this).fadeOut();
-    $('body').css('background', '#d7764c');
+    $('body').css('background', frame2light);
     $('.block').hide();
     $('.frame1').fadeOut();
     $('.frame2').delay(400).fadeIn(500);
@@ -47,16 +49,16 @@ $(document).ready(function() {
 
   $(".frame2 > p").hover(
     function() {
-      $('.frame2').css('background', '#bf6943');
+      $('.frame2').css('background', frame2med);
     },
     function() {
-      $('.frame2').css('background', '#d7764c');
+      $('.frame2').css('background', frame2light);
     }); //end hover
 
 
   $('.frame2 > p, .block').on('click', function() {
     $('.frame2 > p').fadeOut();
-    $('body').css('background', '.deab1f');
+    $('body').css('background', '#c88021');
     $('.circle').hide();
     $('.frame2').fadeOut();
     $('.frame3').delay(400).fadeIn();
@@ -65,18 +67,18 @@ $(document).ready(function() {
     $('.reset').delay(900).fadeIn(900);
     $('.circle').hover(
       function() {
-        $(this).css('background', '#b1660e');
+        $(this).css('background', '#b45b09');
         $('.circle').not($(this)).fadeOut(200);
       },
       function() {
-        $(this).css('background', '#af7b18');
+        $(this).css('background', '#ad6f1c');
         $('.circle').not($(this)).fadeIn();
       }
     ); //end hover
   }); //end click
 
   $('.more').on('click', function() {
-    $('body').css('background', '#d7764c');
+    $('body').css('background', frame2light);
     $('.block').hide();
     $('.frame3').fadeOut();
     $('.frame2, .frame2 p').delay(400).fadeIn(500);

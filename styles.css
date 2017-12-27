@@ -166,6 +166,10 @@ body {
 .frame3 {
   background: #cf921c;
 }
+.frame3 a {
+  color: #fff;
+  text-decoration: none;
+}
 .icon {
   position: absolute;
   top: 25vh;

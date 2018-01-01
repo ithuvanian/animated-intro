@@ -2,6 +2,10 @@ html, body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 body {
@@ -177,6 +181,7 @@ body {
 .icon {
   position: absolute;
   top: 25vh;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 25vw;
   width: 64px;
@@ -185,6 +190,7 @@ body {
 .description {
   position: absolute;
   top: 25vh;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 35vw;
   width: 40vw;

@@ -67,7 +67,7 @@ $(document).ready(function() {
     $('.reset').delay(900).fadeIn(900);
     $('.circle').hover(
       function() {
-        $(this).css('background', '#b45b09');
+        $(this).css('background', '#ac4d0f');
         $('.circle').not($(this)).fadeOut(200);
       },
       function() {
